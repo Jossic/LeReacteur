@@ -12,13 +12,18 @@
 */
 
 const generateString = (height, width) => {
-  let str = "";
+	let str = '';
 
-  // Début de votre code
+	// Début de votre code
+	for (let i = 0; i < height; i++) {
+		str += '\n';
+		for (let j = 0; j < width; j++) {
+			str += '-';
+		}
+	}
+	// Fin de votre code
 
-  // Fin de votre code
-
-  return str;
+	return str;
 };
 
 const height = 3;
