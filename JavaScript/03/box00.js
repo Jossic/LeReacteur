@@ -23,4 +23,4 @@ const box = (width, height) => {
 	return str;
 };
 
-console.log(box(10, 10));
+console.log(box(4, 4));
