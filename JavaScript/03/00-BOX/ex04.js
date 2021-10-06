@@ -8,13 +8,14 @@
 */
 
 // Début de votre code
-for (let i = 0; i < num; i++) {
-	if (i === num - 1) {
-		str += 'o';
-	} else {
-		str += '-';
+const generateString = (height) => {
+	let str = '';
+	for (let i = 0; i < height; i++) {
+		str += 'o---o\n';
 	}
-}
+	return str;
+};
+
 // Fin de votre code
 
 const height = 4;
