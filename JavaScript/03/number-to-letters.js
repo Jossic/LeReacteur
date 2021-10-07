@@ -1,5 +1,5 @@
 function Unite(nombre) {
-	var unite;
+	let unite;
 	switch (nombre) {
 		case 0:
 			unite = 'zéro';
@@ -96,9 +96,9 @@ function Dizaine(nombre) {
 } //-----------------------------------------------------------------------
 
 function NumberToLetter(nombre) {
-	var i, j, n, quotient, reste, nb;
-	var ch;
-	var numberToLetter = '';
+	let i, j, n, quotient, reste, nb;
+	let ch;
+	let numberToLetter = '';
 	//__________________________________
 
 	if (nombre.toString().replace(/ /gi, '').length > 15)
@@ -324,4 +324,4 @@ function NumberToLetter(nombre) {
 
 	return numberToLetter;
 }
-console.log(NumberToLetter(548542365.55));
+console.log(NumberToLetter(548542365));
