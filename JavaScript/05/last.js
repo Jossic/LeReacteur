@@ -10,6 +10,9 @@
 */
 
 // Début de votre code
+const last = (array) => {
+	return array.pop();
+};
 
 // Fin de votre code
 
