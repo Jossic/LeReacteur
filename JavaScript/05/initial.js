@@ -10,6 +10,10 @@
 */
 
 // Début de votre code
+const initial = (array) => {
+	array.pop();
+	return array;
+};
 
 // Fin de votre code
 
