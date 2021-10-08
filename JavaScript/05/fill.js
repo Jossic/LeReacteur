@@ -11,6 +11,12 @@
 */
 
 // Début de votre code
+const fill = (array, char) => {
+	for (let i = 0; i < array.length; i++) {
+		array[i] = char;
+	}
+	return array;
+};
 
 // Fin de votre code
 
