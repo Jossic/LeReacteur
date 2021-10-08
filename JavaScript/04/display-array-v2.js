@@ -12,5 +12,13 @@ const displayArray = (tableau) => {
 	return str;
 };
 
+const displayArray2 = (tableau) => {
+	const popped = tableau.pop();
+	return tableau.join(', ') + ' et ' + popped;
+};
+
 console.log(displayArray(['Xavier', 'Farid', 'Kévin'])); // Affichera "Xavier, Farid et Kévin"
 console.log(displayArray(['Pomme', 'Banane', 'Abricot', 'Cerise'])); // Affichera "Pomme, Banane, Abricot et Cerise"
+
+console.log(displayArray2(['Xavier', 'Farid', 'Kévin'])); // Affichera "Xavier, Farid et Kévin"
+console.log(displayArray2(['Pomme', 'Banane', 'Abricot', 'Cerise'])); // Affichera "Pomme, Banane, Abricot et Cerise"
