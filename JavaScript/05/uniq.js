@@ -10,6 +10,9 @@
 */
 
 // Début de votre code
+const uniq = (array) => {
+	return [...new Set(array)];
+};
 
 // Fin de votre code
 
