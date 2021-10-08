@@ -11,6 +11,13 @@
 */
 
 // Début de votre code
+const repeat = (char, num) => {
+	newStr = '';
+	for (let i = 0; i < num; i++) {
+		newStr += char;
+	}
+	return newStr;
+};
 
 // Fin de votre code
 
