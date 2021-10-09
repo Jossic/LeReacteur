@@ -1,62 +1,33 @@
-const readline = require('readline');
+const readline = require('readline'); // pour avoir accès au module `readline`
+const rl = readline.createInterface(process.stdin, process.stdout); // précise l'interface d'entrée et l'interface de sortie. stdin et stdout représentent le terminal qui exécute le programme.
 
-const rl = readline.createInterface({
-	input: process.stdin,
-	output: process.stdout,
-});
-
-let count = 0;
-let isWin = false;
-const initiateGame = () => {
-	count = 0;
-	isWin = false;
-	rl.setPrompt('Quel est le nombre ? ');
-	return Math.floor(Math.random() * 10001);
+const initGame = (params) => {
+	let count = 1;
+	const num = Math.floor(Math.random() * 100) + 1;
 };
 
-aleaNumber = initiateGame();
+initGame();
 
-console.log(`aleaNumber =>`, aleaNumber);
+const moreOrLess = () => {
+	console.log(num);
 
-do {
-	rl.prompt();
-	rl.on('line', (line) => {
-		count++;
-		line = Number(line);
-		if (!isNaN(line) || line > 10000 || line <= 0) {
-			if (line == aleaNumber) {
-				console.log(
-					`Bravo, vous avez trouvé le nombre mystère en ${count} coups !`
-				);
-				rl.setPrompt('Souhaitez-vous rejouer ? (yes - no)');
-				rl.prompt();
-				rl.on('line', (line2) => {
-					if (line2 === 'yes') {
-						aleaNumber = initiateGame();
-						break
-					} else {
-						rl.close();
-						process.exit(0);
-					}
-				}).on('close', () => {
-					console.log(`Merci d'avoir joué`);
-					process.exit(0);
-				});
-			} else if (line > aleaNumber) {
-				console.log(`C'est moins !`);
-				isWin = false;
-			} else if (line < aleaNumber) {
-				console.log(`C'est plus !`);
-				isWin = false;
-			}
+	const onAnswer = (answer) => {
+		if (Number(answer) === num) {
+			console.log(
+				`Bravo, vous avez trouvé le nombre mystère en ${count} coups !`
+			);
+			rl.close();
+		} else if (Number(answer) > num) {
+			count++;
+			console.log("C'est moins !");
+			rl.question('Quel est le nombre mystère ? ', onAnswer);
 		} else {
-			console.log('Merci de renseigner un nombre entier, positif');
+			count++;
+			console.log("C'est plus !");
+			rl.question('Quel est le nombre mystère ? ', onAnswer);
 		}
-		if (isWin) {
-		}
-		rl.prompt();
-	}).on('close', () => {
-		console.log(`Merci d'avoir joué`);
-		process.exit(0);
-	});
-} while (isWin);
+	};
+	rl.question('Quel est le nombre mystère ? ', onAnswer); // permet d'écouter les entrées de l'utilisateur
+};
+
+moreOrLess();
