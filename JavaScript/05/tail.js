@@ -13,6 +13,7 @@
 const tail = (array) => {
 	array.shift();
 	return array;
+	// return tab.slice(1)
 };
 
 // Fin de votre code

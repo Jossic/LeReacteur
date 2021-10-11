@@ -1,3 +1,7 @@
-const tab = ['cat', 'frog', 'dog', 'horse', 'mpuse'];
-const num = indexOf('dodg');
-console.log(num);
+const newArray = (tab) => {
+	const popped = tab.pop();
+};
+
+const fruits = ['Apple', 'Straw', 'banana', 'lemon', 'water'];
+
+console.log(newArray(fruits));
