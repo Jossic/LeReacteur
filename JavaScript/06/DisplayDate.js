@@ -65,7 +65,7 @@ const displayDate = (date) => {
 		case 6:
 			jourDeLaSemaine = 'samedi';
 			break;
-		case 7:
+		case 0:
 			jourDeLaSemaine = 'dimanche';
 			break;
 		default:
