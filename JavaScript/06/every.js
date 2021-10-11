@@ -11,6 +11,21 @@
 */
 
 // Début de votre code
+const every = (array, func) => {
+	arrayTest = [];
+	if (Array.isArray(array)) {
+		if (func) {
+			for (let i = 0; i < array.length; i++) {
+				arrayTest.push(func(array[i]));
+			}
+			if (arrayTest.includes(false)) {
+				return false;
+			} else {
+				return true;
+			}
+		} else return false;
+	} else return false;
+};
 
 // Fin de votre code
 
