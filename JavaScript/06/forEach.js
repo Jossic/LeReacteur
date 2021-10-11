@@ -9,6 +9,13 @@
 
 const forEach = (arr, func) => {
 	// Début de votre code
+	if (Array.isArray(arr)) {
+		for (let i = 0; i < arr.length; i++) {
+			if (func) {
+				func(arr[i]);
+			}
+		}
+	}
 	// Fin de votre code
 };
 
