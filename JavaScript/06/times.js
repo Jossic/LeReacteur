@@ -11,6 +11,17 @@
 */
 
 // Début de votre code
+const times = (num, randomNum) => {
+	const array = [];
+	for (let i = 0; i < num; i++) {
+		if (randomNum) {
+			array.push(randomNum());
+		} else if (!randomNum) {
+			array.push(undefined);
+		}
+	}
+	return array;
+};
 
 // Fin de votre code
 
