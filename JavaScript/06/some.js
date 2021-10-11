@@ -11,6 +11,21 @@
 */
 
 // Début de votre code
+const some = (array, func) => {
+	arrayTest = [];
+	if (Array.isArray(array)) {
+		if (func) {
+			for (let i = 0; i < array.length; i++) {
+				arrayTest.push(func(array[i]));
+			}
+			if (arrayTest.includes(true)) {
+				return true;
+			} else {
+				return false;
+			}
+		} else return false;
+	} else return false;
+};
 
 // Fin de votre code
 
