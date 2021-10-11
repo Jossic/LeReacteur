@@ -11,6 +11,20 @@
 */
 
 // Début de votre code
+const filter = (array, func) => {
+	const newArray = [];
+	if (func) {
+		if (Array.isArray(array)) {
+			for (let i = 0; i < array.length; i++) {
+				if (func(array[i])) {
+					newArray.push(array[i]);
+				}
+			}
+		}
+	}
+
+	return newArray;
+};
 
 // Fin de votre code
 
