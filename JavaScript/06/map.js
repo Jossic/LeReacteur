@@ -11,6 +11,17 @@
 */
 
 // Début de votre code
+const map = (array, func) => {
+	const newArray = [];
+	if (func) {
+		if (Array.isArray(array)) {
+			for (let i = 0; i < array.length; i++) {
+				newArray.push(func(array[i]));
+			}
+		}
+	}
+	return newArray;
+};
 
 // Fin de votre code
 
