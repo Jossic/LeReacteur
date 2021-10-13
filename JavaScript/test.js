@@ -2,10 +2,9 @@ const panda = {
 	nom: 'bidule',
 	prenom: 'machin',
 	truc: 'uduuf',
+	lead: [{ name: 'farid' }, { name: 'xavier' }],
 };
 
-const keys = Object.keys(panda);
-console.log(`keys =>`, keys);
-for (let i = 0; i < keys.length; i++) {
-	console.log(`panda[keys[i]] =>`, panda[keys[i]]);
+for (let i = 0; i < panda.lead.length; i++) {
+	console.log([panda.lead[i].name]);
 }
