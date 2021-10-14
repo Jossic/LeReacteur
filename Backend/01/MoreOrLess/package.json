@@ -1,0 +1,13 @@
+{
+	"name": "MoreOrLess",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon --experimental-json-modules server.js"
+	},
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}
