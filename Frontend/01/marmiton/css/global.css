@@ -7,14 +7,24 @@ header {
 	padding-left: 10%;
 }
 
+footer {
+	text-align: center;
+	margin: 50px auto 50px auto;
+}
+
 h1 {
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 50px;
 	text-align: center;
+	font-family: 'Roboto';
 }
 
 h5 {
+	font-size: 12px;
 	text-align: center;
+	font-family: 'Roboto';
+	font-weight: 100;
+	margin-top: 5px;
 }
 
 .container {
@@ -22,32 +32,43 @@ h5 {
 	background: white;
 	margin-top: 100px;
 	margin: 80px auto 0 auto;
+	padding: 20px;
 }
 .orangeTitle {
 	color: #f36f59;
 	font-weight: bold;
+	font-size: 25px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .temps {
 	background-color: #8a99b1;
 	margin: 10px auto 20px auto;
-	width: 234px;
-	height: 26px;
+	width: 400px;
+	height: 45px;
+	vertical-align: middle;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-size: 22px;
-	line-height: 26px;
+	line-height: 45px;
 	/* identical to box height */
-	border-radius: 5px;
+	border-radius: 10px;
 	text-align: center;
 	color: white;
 }
 
 .box {
 	display: flex;
+	justify-content: space-around;
 }
 
 .img {
 	width: 300px;
 	height: 300px;
+}
+
+.sub {
+	font-weight: bold;
+	margin-top: 20px;
 }
