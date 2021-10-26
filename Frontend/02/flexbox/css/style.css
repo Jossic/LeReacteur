@@ -7,7 +7,6 @@ menu {
 	background-color: yellow;
 	padding: 20px;
 }
-
 menu ul {
 	display: flex;
 }
@@ -23,14 +22,22 @@ h2 {
 }
 
 /* EXERCICE 1 */
-
-/* EXERCICE 2 */
-.exercice2 {
-	justify-content: flex-end;
+menu.exercice1 ul {
+	display: flex;
 }
+/* EXERCICE 2 */
+menu.exercice2 ul {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
 /* EXERCICE 3 */
-.exercice3 {
+menu.exercice3 ul {
 	flex-wrap: nowrap;
+}
+menu.exercice3 ul .pill {
+	width: 20%;
+	text-align: center;
 }
 /* EXERCICE 4 */
 
