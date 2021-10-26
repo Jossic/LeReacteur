@@ -6,31 +6,162 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Trip Advisor</title>
 	</head>
 	<body>
-		<header>
+		<header style="display: flex">
 			<!-- logo -->
+			<div style="margin-right: 20px">
+				<img
+					src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+					alt=""
+					class="logo"
+				/>
+			</div>
 			<!-- input saisie -->
-			<!-- menu avis, voyage, alerte-->
+			<div class="searchFieldBox">
+				<i class="fas fa-search" style="color: gray"></i>
+				<input type="search" class="searchField" />
+			</div>
+			<div class="nav">
+				<!-- menu avis, voyage, alerte-->
+				<i class="fas fa-pen" style="margin-left: 20px"></i> Avis
+				<i class="far fa-heart" style="margin-left: 20px"></i> Voyages
+				<i class="far fa-bell" style="margin-left: 20px"></i> Alertes
+				<button class="connect">Connectez-vous</button>
+			</div>
 			<!-- bouton connecte -->
 		</header>
-		<main>
-			<h1></h1>
-			<div class="boxMenu">
-				<div class="blocNav">Hotels</div>
-				<div class="blocNav">Locations de vacances</div>
-				<div class="blocNav">Activités</div>
-				<div class="blocNav">Restaurants</div>
-				<div class="blocNav">Forums de voyage</div>
-				<div class="blocNav">Plus</div>
-			</div>
+		<main class="container">
+			<h1><span style="color: #ff5d5d">Explorez</span> Paris</h1>
+			<nav class="boxMenu">
+				<div class="blocNav">
+					<i class="icon fas fa-bed"></i>
+					<div class="ssBlock">Hotels</div>
+				</div>
+				<div class="blocNav">
+					<i class="icon fas fa-key"></i>
+					<div class="ssBlock">Locations de vacances</div>
+				</div>
+				<div class="blocNav">
+					<i class="icon fas fa-road"></i>
+					<div class="ssBlock">Activités</div>
+				</div>
+				<div class="blocNav">
+					<i class="icon fas fa-utensils"></i>
+					<div class="ssBlock">Restaurants</div>
+				</div>
+				<div class="blocNav">
+					<i class="icon far fa-comments"></i>
+					<div class="ssBlock">Forums de voyage</div>
+				</div>
+				<div class="blocNav">
+					<i class="icon fas fa-ellipsis-h"></i>
+					<div class="ssBlock">Plus</div>
+				</div>
+			</nav>
+			<button class="photo">
+				<i class="far fa-image"></i> Toutes les photos
+			</button>
 			<div class="boxPhoto">
-				<img src="" alt="photo 1" />
-				<img src="" alt="photo 2" />
-				<img src="" alt="photo 3" />
+				<div class="itemPhotoGauche">
+					<img
+						style="height: 434px; width: 654px; margin: 1px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/86/0e/caption.jpg?w=700&h=500&s=1"
+						alt="photo 1"
+					/>
+				</div>
+				<div class="itemPhoto">
+					<img
+						style="height: 214.5px; width: 480px; margin: 1px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/58/8c/caption.jpg?w=500&h=300&s=1&cx=2441&cy=1123&chk=v1_140b80ad3746180d2cb8"
+						alt="photo 2"
+					/>
+
+					<img
+						style="height: 214.5px; width: 480px; margin: 1px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4b/59/86/caption.jpg?w=500&h=300&s=1"
+						alt="photo 3"
+					/>
+				</div>
 			</div>
 			<!-- Breadcrumbs -->
+			<div class="box-space-between">
+				<p class="breadcrumbs">
+					Europe > France > Île-de-France > Paris
+				</p>
+				<p class="breadcrumbs">Visiter: Paris</p>
+			</div>
+			<div class="ville">
+				<h2>La Ville Lumière éblouit en tous points</h2>
+				<p class="paraph">
+					Aucun autre endroit au monde ne fait autant rêver que Paris.
+					La ville séduit par son art, son architecture, sa culture et
+					sa cuisine, mais il y a aussi des merveilles plus discrètes
+					qui n’attendent qu’à être explorées : les ruelles pavées
+					pittoresques, les pâtisseries au coin de la rue et les
+					petits bistrots douillets qui vous invitent à boire un verre
+					de beaujolais. Préparez-vous à vous approprier Paris.
+				</p>
+			</div>
+			<h2>Paris : les immanquables</h2>
+			<section class="boxImg">
+				<div class="text">
+					<h3>Se divertir</h3>
+					<p class="subParaph">
+						Des lieux à voir, des rues à explorer et des expériences
+						emblématiques à Paris.
+					</p>
+					<p class="afficher">Tout afficher</p>
+				</div>
+				<div class="card">
+					<div class="heart"><i class="far fa-heart"></i></div>
+					<div class="travel">
+						<img
+							src="https://static.tacdn.com/img2/travelers_choice/2021/TC_LL.svg"
+							alt=""
+						/>
+					</div>
+					<img
+						style="width: 100%; height: 204px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/9e/7f/9d/eiffeltoren.jpg?w=400&h=300&s=1"
+						alt=""
+					/>
+					<h3>Tour Eiffel</h3>
+					<p>notes</p>
+					<p class="desc">
+						Tours et plateformes d'observation, Monuments & points
+						d'intérêt
+					</p>
+				</div>
+				<div class="card">
+					<img
+						style="width: 100%; height: 204px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/19/a5/7f/caption.jpg?w=400&h=300&s=1"
+						alt="photo 2"
+					/>
+				</div>
+				<div class="card">
+					<img
+						style="width: 100%; height: 204px"
+						src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/d0/9b/arc-de-triomphe-at-night.jpg?w=400&h=300&s=1"
+						alt="photo 3"
+					/>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
