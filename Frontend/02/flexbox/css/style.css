@@ -72,3 +72,9 @@ menu.exercice6 ul {
 	text-align: center;
 }
 /* EXERCICE 7 */
+menu.exercice7 ul {
+	justify-content: space-around;
+}
+menu.exercice7 ul .pill {
+	border-radius: 50%;
+}
