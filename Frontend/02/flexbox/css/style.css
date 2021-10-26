@@ -7,6 +7,11 @@ menu {
 	background-color: yellow;
 	padding: 20px;
 }
+
+menu ul {
+	display: flex;
+}
+
 h2 {
 	font-size: 30px;
 	line-height: 100px;
@@ -18,16 +23,15 @@ h2 {
 }
 
 /* EXERCICE 1 */
-.exercice1 {
-	display: flex;
-}
+
 /* EXERCICE 2 */
 .exercice2 {
-	display: flex;
 	justify-content: flex-end;
 }
 /* EXERCICE 3 */
-
+.exercice3 {
+	flex-wrap: nowrap;
+}
 /* EXERCICE 4 */
 
 /* EXERCICE 5 */
