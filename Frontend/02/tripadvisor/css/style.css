@@ -140,6 +140,7 @@ h2 {
 .boxImg {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 90px;
 	/* border: 3px red solid; */
 }
 .text {
@@ -179,14 +180,51 @@ h3 {
 	background-color: white;
 	padding: 8px;
 	border-radius: 50%;
-	left: 220px;
+	left: 210px;
 	top: 10px;
+}
+.arrow {
+	position: absolute;
+	background-color: white;
+	padding: 8px;
+	border: 1px solid black;
+	border-radius: 50%;
+	left: 234px;
+	top: 82px;
+}
+.arrow:hover {
+	background-color: black;
+	color: white;
+	border: 1px solid black;
 }
 .travel {
 	position: absolute;
 	width: 30px;
-	height: 35px;
+	height: 40px;
+	padding: 3px 0 0 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 	background: #31d599;
-	left: 40px;
-	top: 60px;
+	left: 10px;
+	top: 155px;
+}
+
+.cardTitle {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+.cardNote {
+	font-size: 10px;
+	color: #25a576;
+}
+
+.cardDesc {
+	padding-top: 5px;
+	font-size: 14px;
+	line-height: 17px;
 }
