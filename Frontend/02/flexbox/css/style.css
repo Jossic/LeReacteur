@@ -54,6 +54,16 @@ menu.exercice4 ul .pill:nth-child(2) {
 	flex-grow: 3;
 }
 /* EXERCICE 5 */
+menu.exercice5 ul {
+	justify-content: flex-end;
+}
+menu.exercice5 ul .pill {
+	text-align: center;
+}
+div.pill {
+	text-align: center;
+	width: 10%;
+}
 
 /* EXERCICE 6 */
 
