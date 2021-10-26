@@ -40,7 +40,19 @@ menu.exercice3 ul .pill {
 	text-align: center;
 }
 /* EXERCICE 4 */
-
+menu.exercice4 ul {
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+menu.exercice4 ul .pill {
+	margin: 5px;
+	flex-grow: 1;
+	text-align: center;
+}
+menu.exercice4 ul .pill:nth-child(2) {
+	text-align: center;
+	flex-grow: 3;
+}
 /* EXERCICE 5 */
 
 /* EXERCICE 6 */
