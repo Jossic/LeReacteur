@@ -27,18 +27,20 @@
 body {
 	font-family: 'Trip Sans', 'Times New Roman', Times, serif;
 }
+
 header {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 50px;
-	/* border: 1px solid red; */
 	padding: 10px;
 	font-size: 16px;
 	margin-bottom: 20px;
+	/* position: fixed; */
 }
 
 .container {
+	/* margin-top: 50px; */
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -342,4 +344,11 @@ h4 {
 .cardDescAPartir {
 	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
 	color: black;
+}
+
+.foot {
+	padding: 25px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
