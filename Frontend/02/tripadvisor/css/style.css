@@ -1,14 +1,31 @@
 @font-face {
+	font-family: 'Trip Sans Med';
+	src: url('../fonts/TripSans-Medium.eot');
+	src: url('../fonts/TripSans-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TripSans-Medium.woff2') format('woff2'),
+		url('../fonts/TripSans-Medium.woff') format('woff'),
+		url('../fonts/TripSans-Medium.ttf') format('truetype'),
+		url('../fonts/TripSans-Medium.svg#TripSans-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'Trip Sans';
-	src: url('../fonts/TripSans-Regular.woff2') format('woff2'),
-		url('../fonts/TripSans-Regular.woff') format('woff');
+	src: url('../fonts/TripSans-Regular.eot');
+	src: url('../fonts/TripSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TripSans-Regular.woff2') format('woff2'),
+		url('../fonts/TripSans-Regular.woff') format('woff'),
+		url('../fonts/TripSans-Regular.ttf') format('truetype'),
+		url('../fonts/TripSans-Regular.svg#TripSans-Regular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 body {
-	width: 80%;
+	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Trip Sans', 'Times New Roman', Times, serif;
@@ -18,9 +35,16 @@ header {
 	/* border: 1px solid red; */
 	padding: 10px;
 	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.container {
+	/* width: 80%; */
+	margin: auto;
 }
 
 h1 {
+	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
 	font-size: 54px;
 	font-weight: 900;
 	letter-spacing: 1.08px;
@@ -33,7 +57,7 @@ h2 {
 	font-weight: 800;
 	line-height: 33px;
 	word-spacing: 0px;
-	font-family: 'Trip Sans', 'Times New Roman', Times, serif;
+	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
 	margin-bottom: 15px;
 }
 .logo {
@@ -63,9 +87,6 @@ h2 {
 	color: white;
 	padding: 10px;
 	margin-left: 20px;
-}
-
-.container {
 }
 
 .boxMenu {
@@ -132,7 +153,7 @@ h2 {
 	color: white;
 	padding: 8px;
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: 300;
 	line-height: 14px;
 	text-align: center;
 	cursor: pointer;
@@ -236,4 +257,61 @@ h3 {
 	padding-top: 5px;
 	font-size: 14px;
 	line-height: 17px;
+}
+
+.flex {
+	display: flex;
+}
+.space-between {
+	justify-content: space-between;
+}
+
+.paper {
+	background-color: #faf1ed;
+	width: 30%;
+	height: 120px;
+	margin: 0 5px 80px 5px;
+	padding: 25px;
+	font-size: 16px;
+	border-radius: 12px;
+	box-shadow: 5px 5px 15px lightgrey;
+	position: relative;
+}
+
+.paperTitle {
+	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
+	font-size: 18px;
+	line-height: 22px;
+	word-spacing: 0px;
+}
+
+.paperPar {
+	font-size: 16px;
+	font-weight: 100;
+	font-family: 'Trip Sans', 'Times New Roman', Times, serif;
+	color: grey;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 15px;
+}
+
+.gras {
+	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
+	color: black;
+}
+
+.round-img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-right: 5px;
+}
+
+.card {
+	width: 30%;
+	position: relative;
+	/* height: 294.844px;
+	width: 271.997px; */
+	/* border: 3px red solid; */
 }
