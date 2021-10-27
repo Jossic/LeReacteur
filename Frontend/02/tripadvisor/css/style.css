@@ -25,12 +25,12 @@
 }
 
 body {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
 	font-family: 'Trip Sans', 'Times New Roman', Times, serif;
 }
 header {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 50px;
 	/* border: 1px solid red; */
 	padding: 10px;
@@ -39,8 +39,9 @@ header {
 }
 
 .container {
-	/* width: 80%; */
-	margin: auto;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1 {
@@ -60,6 +61,12 @@ h2 {
 	font-family: 'Trip Sans Med', 'Times New Roman', Times, serif;
 	margin-bottom: 15px;
 	margin-top: 70px;
+}
+
+footer {
+	background-color: #faf1ed;
+	width: 100vw;
+	height: 130px;
 }
 .logo {
 	width: 170px;
