@@ -29,18 +29,20 @@ body {
 }
 
 header {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100vw;
+	margin-left: 20%;
+	margin-right: 20%;
+	/* margin-bottom: 50px; */
 	height: 50px;
 	padding: 10px;
 	font-size: 16px;
 	margin-bottom: 20px;
-	/* position: fixed; */
+	border: 1px solid red;
+	position: fixed;
 }
 
 .container {
-	/* margin-top: 50px; */
+	padding-top: 90px;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -101,10 +103,13 @@ footer {
 
 .boxMenu {
 	display: flex;
-	/* border: 1px solid black; */
-	width: 100%;
-	justify-content: space-between;
 	margin-bottom: -15px;
+}
+.boxMenu div {
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
 }
 .blocNav {
 	font-size: 16px;
@@ -114,7 +119,6 @@ footer {
 	border: 1px solid black;
 	min-height: auto;
 	min-width: 150px;
-	/* padding-top: 5px; */
 	border-radius: 15px;
 	margin: 5px;
 	cursor: pointer;
@@ -126,7 +130,7 @@ footer {
 
 .icon {
 	position: relative;
-	left: 140px;
+	right: 10px;
 	top: 15px;
 }
 
