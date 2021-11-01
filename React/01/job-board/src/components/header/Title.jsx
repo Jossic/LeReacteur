@@ -9,7 +9,10 @@ const Title = () => {
 				background: 'black',
 				textAlign: 'center',
 				color: 'white',
-			}}></div>
+				fontSize: '50px',
+			}}>
+			<h1>The Job Board</h1>
+		</div>
 	);
 };
 
